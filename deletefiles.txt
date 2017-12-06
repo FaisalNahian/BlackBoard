@@ -1,0 +1,213 @@
+<li><a href="freqborrowedbookb.php">Frequently Borrowed books in a Branch</a></li>
+All deleted information here
+ <li class="dropdown">
+ <label class="radio-inline"><input type="radio" id="txtchoice" name="txtchoice" value="libid">By Library id</label><br>
+				<label class="radio-inline"><input type="radio" id="txtchoice" name="txtchoice" value="title">By Book Title</label><br>
+				<label class="radio-inline"><input type="radio" id="txtchoice" name="txtchoice" value="publisher">By Publisher</label>
+				adminsearch
+				
+				<?php
+
+session_start();
+
+require_once("php/connect.php");
+
+
+
+
+$uid = $_SESSION['uid'];
+?>
+<html>
+
+<head>
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<script src="bootstrap/js/jquery-1.12.2.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+
+	<title> Search Book </title>
+	
+</head>
+
+<body >
+
+<nav class="navbar navbar-inverse">
+
+	<div class="container-fluid">
+
+		
+		<div class="navbar-header">
+			<a hre="#" class="navbar-brand" /> BLACKBOARD SYSTEM </a>
+		</div>
+
+		<!-- Menu  Left -->
+        <div>
+            <ul class="nav navbar-nav">
+                <li> <a href="home.php"> Home </a> </li>
+                <li  > <a href="create.php"> Add Book </a> </li>
+    
+                <li > <a href="delete.php"> Delete  Book</a> </li>
+                <li > <a href="adminsearch.php"> Search Book </a> </li>
+				<li> <a href="adduser.php"> Add User</a> </li>
+    
+                <li> <a href="adminreserve.php"> View Reserved Books</a> </li>
+				<li> <a href="adminborrow.php"> View Borrowed Books</a> </li>
+                <li class="active"> <a href="admindisplay.php"> Display all books </a> </li>
+				<li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"> More Options <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="freqborrower.php">Frequent Borrowers</a></li>
+						<li><a href="freqborrowedbook.php">Frequently Borrowed books</a></li>
+							<li><a href="freqborrowerb.php">Frequent Borrowers in Branch</a></li>
+						<li><a href="freqborrowedbookb.php">Frequently Borrowed books in a Branch</a></li>
+
+                    </ul>
+                </li>
+				
+                
+				
+				
+
+            </ul>
+
+
+            <!-- Menu  right -->
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <?php echo "admin"; ?><span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="php/logout.php">Log-Out</a></li>
+
+                    </ul>
+                </li>
+
+            </ul>
+
+
+        </div>
+
+	</div>
+
+</nav>
+<?php
+
+
+
+
+$result = mysqli_query($con," select * from book ") or die("Error " . mysql_error());
+
+
+?>
+<table class="table table-bordered">
+	<tr>
+		<th> Book ID</th>
+		<th> Book Title</th>
+		<th> Author ID</th>
+		<th> Library ID</th>	
+		<th> ISBN </th>
+		<th> Publisher </th>
+		<th> Publication Date </th>
+		<th> Status</th>
+		
+		
+	<tr>
+	<?php
+	$f=0;
+	while($data=mysqli_fetch_Array($result))
+	{
+		$f=1;
+		echo "<tr>";
+		echo "<td> $data[0] </td> ";
+		echo "<td> $data[1] </td> ";
+		echo "<td> $data[2] </td> ";
+		echo "<td> $data[3] </td> ";
+		echo "<td> $data[4] </td> ";
+		echo "<td> $data[5] </td> ";
+		echo "<td> $data[6] </td> ";
+		echo "<td> $data[8] </td> ";
+		
+		echo "<td> <form  method='post' action='update.php'> <button class='btn btn-default' name='btn' type='submit' value='".$data[0]."'>&nbsp;<span class='glyphicon glyphicon-pencil'></span>&nbsp;</button> </form></td>";
+		
+		echo "</tr>";
+	}
+	?></table><?php
+	
+	if($f==0)
+	{
+
+echo "could not find the book";
+	}
+mysqli_close($con);
+
+
+ 
+?>
+
+
+
+
+
+</body>
+
+</html>
+
+creat.php
+
+<?php 
+	session_start();
+	require_once("connect.php");
+	
+	$uid = $_SESSION['uid'];
+	
+	# Extract Form values
+	$bookname = $_POST['bookname'];
+	$authid = $_POST['authid'];
+	$libid = $_POST['libid'];
+	$isbn = $_POST['isbn'];
+	$publisher = $_POST['publisher'];
+	$pubdate = $_POST['pubdate'];
+	
+	#echo $fname . $lname . $mobile . $landline . $email . $public;
+	
+	if( mysqli_query($con," insert into book(title,authid,libid,isbn,publisher,pubdate,status) values('$bookname','$authid',$libid,$isbn,'$publisher','$pubdate','available')"))
+	{
+		
+			
+			
+		$_SESSION['insert_success']=1;
+		header("Location: ..\create.php");
+	}
+	else
+	{
+		$_SESSION['insert_success']=0;
+		header("Location: ..\create.php");
+	}	
+	mysqli_close($con);
+?>
+
+
+
+
+
+
+
+
+<script src="blackboard/tinymce/tinymce.min.js"></script>
+		
+		<script>
+           tinymce.init{(
+		   selector:'#myTextarea',
+		   height:200,
+		   theme: 'modern',
+		   plugins:[
+		   'advlist autolink lists link image charmap print preview hr anchor pagebreak',
+		   'searchplace wordcount visualblocks visualchar code fullscreen',
+		   'insertdatetime media nonbreaking save table contextmenue directionality',
+		   'emoticons templet paste textcolor colorpicker textpattern imagetools',
+		   ],
+		   toolbar1:'insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
+		   toolbar2:'print preview media | forecolor backcolor emoticons',
+		   image_advtab: true
+		   });
+        </script>
+		 <textarea id="myTextareat" name="myTextarea" rows="6" cols"40" style="width:600;"></textarea>
+		  <textarea id="myTextareat" name="myTextarea" rows="6" cols"40" style="width:600;"></textarea>
