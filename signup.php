@@ -1,9 +1,6 @@
 <?php
 	$user_taken  = "";
-<<<<<<< HEAD
 	
-=======
->>>>>>> 588748919bbca0a2bfc7a8b88b0ffeb13fd4c27e
 ?>
 <html>
 	
@@ -69,11 +66,7 @@
 			
 				<ul class="nav navbar-nav navbar-right">
 					
-<<<<<<< HEAD
 					<li> <a href="index.php"><span class="glyphicon glyphicon-log-in"> Log-In </a> </li>
-=======
-					<li> <a href="index.php"> Log-In </a> </li>
->>>>>>> 588748919bbca0a2bfc7a8b88b0ffeb13fd4c27e
 				
 				</ul>
 			
@@ -115,11 +108,7 @@
 			
 			</div>
 			</form>
-<<<<<<< HEAD
 			
-=======
-			<a href="index.php">Sign-Up</a>
->>>>>>> 588748919bbca0a2bfc7a8b88b0ffeb13fd4c27e
 		</div>
          
 		<div class="col-xs-4" >
@@ -130,10 +119,6 @@
      
     </div>
 
-<<<<<<< HEAD
 <body  style=" background:url(https://i.pinimg.com/originals/8d/2f/16/8d2f16132c197bf7298aee78483f8fcc.jpg)"></body>
-=======
-
->>>>>>> 588748919bbca0a2bfc7a8b88b0ffeb13fd4c27e
 </body>
 </html>

@@ -19,10 +19,7 @@ if (isset($_REQUEST['username'])){
 VALUES ('$username', '".md5($password)."', '$email', '$student_id', '$trn_date')";
         $result = mysqli_query($con,$query);
         if($result){
-<<<<<<< HEAD
 		
-=======
->>>>>>> 588748919bbca0a2bfc7a8b88b0ffeb13fd4c27e
             echo "<div class='form'>
 <h3>You are registered successfully.</h3>
 <br/>Click here to <a href='login.php'>Login</a></div>";
