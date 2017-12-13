@@ -1,6 +1,6 @@
 <?php
 require('connect.php');
-// If form submitted, insert values into the database.
+// If signup form in the root submitted, insert values into the database.
 if (isset($_REQUEST['username'])){
         // removes backslashes
 	$username = stripslashes($_REQUEST['username']);

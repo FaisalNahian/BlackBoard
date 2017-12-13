@@ -1,6 +1,5 @@
 <?php
 	$user_taken  = "";
-	
 ?>
 <html>
 <head>
@@ -50,7 +49,7 @@
 	</script>
 </head>
 		
-<body >
+<body style=" background:url(http://nzprincipal.co.nz/wp-content/uploads/2015/03/blackboard-bg-resized.jpg)">
 
     <nav class="navbar navbar-inverse">
 	
@@ -88,7 +87,7 @@
 			<!-- Sign up form -->
 			<form role="form" method="post" action="php/signup.php" onsubmit="return validatePassword()">
 			<div class="form" align="center">
-			<h2> <strong> Sign-Up </strong> </h2>
+			<h2 style="color:white"> <strong> Sign-Up </strong> </h2>
 			<br/><br/>
 			
 			<input type="text" class="form-control" name="username"  placeholder="User Name" aria-describedby="basic-addon1" required ><br/><br/>
@@ -97,9 +96,9 @@
 			
 			<input type="password" class="form-control" name="password" placeholder="Confirm Password" id="pwd2" aria-describedby="basic-addon1"  required > <br/><br/>
 
-			<input type="text" class="form-control" name="email"  placeholder="Email Id" aria-describedby="basic-addon1" required > <br/><br/>
+			<input type="text" class="form-control" name="email"  placeholder="Email" aria-describedby="basic-addon1" required > <br/><br/>
 
-			<input type="text" class="form-control" name="mobile"  placeholder="Mobile Number" aria-describedby="basic-addon1" required > <br/><br/>
+			<input type="text" class="form-control" name="mobile"  placeholder="Phone" aria-describedby="basic-addon1" required > <br/><br/>
 			
 			<input type="text" class="form-control" name="student_id"  placeholder="Student ID" aria-describedby="basic-addon1" required > <br/><br/>
 
@@ -118,6 +117,5 @@
      
     </div>
 
-<body  style=" background:url(https://i.pinimg.com/originals/8d/2f/16/8d2f16132c197bf7298aee78483f8fcc.jpg)"></body>
 </body>
 </html>
