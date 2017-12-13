@@ -1,22 +1,10 @@
 <?php
-
-
+session_start();
+require_once("php/connect.php");
 
 //include 'connect.php';
 include 'rNavBar.php';
 include 'rTempBody.php';
-
-
-//start
-$conn=mysqli_connect("localhost","root","root","blackboard_db");
-
-if(!$conn)
-{
-die("Connection failed: " . mysqli_connect_error());
-}
-
-//end
-
 ?>
 
  <?php

@@ -1,16 +1,10 @@
 <?php
+session_start();
+require_once("php/connect.php");
 
 //include 'connect.php';
 include 'rNavBar.php';
 include 'rTempBody.php';
-
-
-$host = "localhost";
-$username ="root";
-$password = "root";
-$dbname = "blackboard_db";
-
-
 ?>
 
 

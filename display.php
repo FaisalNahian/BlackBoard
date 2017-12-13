@@ -1,13 +1,9 @@
+<!--Added connect string -->
 <?php
-
-
-	$user = "root";
-	$pass = "";
-	$host = "localhost";
-	$database = "planner";
-	$con = mysqli_connect($host,$user,$pass,$database) ;
+session_start();
+require_once("php/connect.php");
 	
-	 $query = "SELECT * FROM table 1";
+	$query = "SELECT * FROM table 1";
 	if($result = mysqli_query ( $con , $query))
 	{
 		if (mysql_num_rows($result)>0)

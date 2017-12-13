@@ -1,13 +1,7 @@
 <?php
-
 error_reporting(0);
 session_start();
-
 require_once("php/connect.php");
-
-
-
-
 $uid = $_SESSION['uid'];
 ?>
 <html>

@@ -1,7 +1,7 @@
 <?php
-
-session_start();
-	require_once("connect.php");
+	session_start();
+	require_once("php/connect.php");
+	
 	$borrowid = $_POST['btn'];
 	echo $borrowid;
 	$select = mysqli_query($con,"select * from borrow where borrowid = '$borrowid'");

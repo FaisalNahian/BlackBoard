@@ -3,7 +3,6 @@
 	
 ?>
 <html>
-	
 <head>
 	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<script src="bootstrap/js/jquery-1.12.2.js"></script>
