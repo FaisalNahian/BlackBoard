@@ -1,0 +1,96 @@
+/*     rAddClass CSS      */
+
+#formdiv {
+
+width:100%;
+background:rgba(0,0,0,.1);
+position:absolute;
+vertical-align: text-top;
+}
+
+#formcontainer {
+
+
+width:450px;
+height:500px;
+margin:auto;
+margin-top:25px;
+margin-bottom:25px;
+background:rgba(255,255,255,.8);
+padding:25px;
+
+vertical-align: text-top;
+line-height:20px;
+
+}
+
+#formcontainer h3 {
+
+font-size:28px;
+
+}
+
+#desc {
+
+height:300px;
+width: 400px;
+vertical-align: text-top;
+}
+
+#title {
+
+height:30px;
+width:400px;
+
+}
+
+/*     rViewClass CSS      */
+
+#tablediv {
+
+width:100%;
+background:rgba(0,0,0,.1);
+position:absolute;
+vertical-align: text-top;
+}
+
+#tablecontainer {
+
+
+width:925px;
+height:700px;
+margin:auto;
+margin-top:25px;
+margin-bottom:25px;
+background:rgba(255,255,255,.8);
+padding:25px;
+
+vertical-align: text-top;
+line-height:20px;
+
+border-left: solid 1px rgba(0,0,0,.5);
+border-right: solid 1px rgba(0,0,0,.5);
+}
+
+#tablecontainer h3 {
+
+font-size:28px;
+
+}
+
+#tablecontainer input {
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
