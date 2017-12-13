@@ -9,20 +9,22 @@ if (isset($_REQUEST['username'])){
 	$email = stripslashes($_REQUEST['email']);
 	$email = mysqli_real_escape_string($con,$email);
 	$mobile = stripslashes($_REQUEST['mobile']);
+	//added mobile connect to the database
+	$mobile = mysqli_real_escape_string($con,$mobile);
 	$password = stripslashes($_REQUEST['password']);
 	$password = mysqli_real_escape_string($con,$password);
 	$student_id = stripslashes($_REQUEST['student_id']);
 	$student_id = mysqli_real_escape_string($con,$student_id);
 	
 	$trn_date = date("Y-m-d H:i:s");
-        $query = "INSERT into `registration` (username, password, email, student_id, trn_date)
-VALUES ('$username', '".md5($password)."', '$email', '$student_id', '$trn_date')";
+        $query = "INSERT into `registration` (username, password, email, student_id, mobile)
+					VALUES ('$username', '".md5($password)."', '$email', '$student_id', '$mobile')";
         $result = mysqli_query($con,$query);
         if($result){
 		
             echo "<div class='form'>
-<h3>You are registered successfully.</h3>
-<br/>Click here to <a href='login.php'>Login</a></div>";
+	<h3>You are registered successfully.</h3>
+	<br/>Click here to <a href='login.php'>Login</a></div>";
         }
     }else{}
 ?>
