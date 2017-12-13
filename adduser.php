@@ -58,7 +58,7 @@
 		
 			
 			<div class="navbar-header">
-				<a href="index.php" class="navbar-brand" /> BLACKBOARD SYSTEM </a>
+				<a href="index.php" class="navbar-brand" /> BLACKBOARD </a>
 				<a href="home.php" class="navbar-brand" /> Home</a>
 				
 				

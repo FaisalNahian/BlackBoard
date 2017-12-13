@@ -42,7 +42,7 @@
 
         <!-- Logo -->
         <div class="navbar-header">
-            <a hre="#" class="navbar-brand" />BLACKBOARD SYSTEM </a>
+            <a hre="#" class="navbar-brand" />BLACKBOARD </a>
         </div>
 
         <!-- Menu on Left -->
@@ -105,7 +105,7 @@
             
 
             <div class="jumbotron">
-                <h1 align ="center" class="text-success">BLACKBOARD SYSTEM</h1>
+                <h1 align ="center" class="text-success">BLACKBOARD</h1>
                 <p></P>
 
             <br/><br/>

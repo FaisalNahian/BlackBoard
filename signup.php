@@ -58,7 +58,7 @@
 		
 			<!-- Logo -->
 			<div class="navbar-header">
-				<a href="index.php" class="navbar-brand" /> BLACKBOARD SYSTEM </a>
+				<a href="index.php" class="navbar-brand" /> BLACKBOARD </a>
 			</div>
 	
 			<!-- Menu on the right -->
@@ -93,13 +93,13 @@
 			
 			<input type="text" class="form-control" name="username"  placeholder="User Name" aria-describedby="basic-addon1" required ><br/><br/>
 			
-			<input type="text" class="form-control" name="email"  placeholder="Email Id" aria-describedby="basic-addon1" required > <br/><br/>
-
-			<input type="text" class="form-control" name="mobile"  placeholder="Mobile Number" aria-describedby="basic-addon1" required > <br/><br/>
-
 			<input type="password" class="form-control" name="password" id="pwd1" placeholder="Password" aria-describedby="basic-addon1"  required > <br/><br/>
 			
 			<input type="password" class="form-control" name="password" placeholder="Confirm Password" id="pwd2" aria-describedby="basic-addon1"  required > <br/><br/>
+
+			<input type="text" class="form-control" name="email"  placeholder="Email Id" aria-describedby="basic-addon1" required > <br/><br/>
+
+			<input type="text" class="form-control" name="mobile"  placeholder="Mobile Number" aria-describedby="basic-addon1" required > <br/><br/>
 			
 			<input type="text" class="form-control" name="student_id"  placeholder="Student ID" aria-describedby="basic-addon1" required > <br/><br/>
 

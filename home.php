@@ -23,7 +23,7 @@
     <script src="bootstrap/js/jquery-1.12.2.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
 
-    <title> BLACKBOARD SYSTEM</title>
+    <title> BLACKBOARD</title>
 </head>
 
 <body>
@@ -47,7 +47,7 @@
 
         <!-- Logo -->
         <div class="navbar-header" >
-            <a hre="#" class="navbar-brand"/> BLACKBOARD SYSTEM </a>
+            <a hre="#" class="navbar-brand"/> BLACKBOARD </a>
         </div>
 
         <!-- Menu on Left -->
@@ -117,7 +117,7 @@
             
 
             <div class="jumbotron">
-                <h1 align ="center"> BLACKBOARD SYSTEM</h1>
+                <h1 align ="center"> BLACKBOARD</h1>
                 <p></P>
 
             <br/><br/>

@@ -27,7 +27,7 @@
 
 		<!-- Logo -->
 		<div class="navbar-header">
-			<a hre="#" class="navbar-brand" /> BLACKBOARD SYSTEM </a>
+			<a hre="#" class="navbar-brand" /> BLACKBOARD </a>
 		</div>
 
 		<!-- Menu Left -->
