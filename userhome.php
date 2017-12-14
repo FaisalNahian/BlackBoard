@@ -13,6 +13,16 @@
 <html>
 
 <head>
+<!--Start of Zendesk Chat Script-->
+<script type="text/javascript">
+window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+$.src="https://v2.zopim.com/?5JkX0Ls3oJ4J3ShdCV31ioYp0B1sryTp";z.t=+new Date;$.
+type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+</script>
+<!--End of Zendesk Chat Script-->
+	<link herf="bootstrap/css/style.css" rel="stylesheet">
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <script src="bootstrap/js/jquery-1.12.2.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
@@ -42,13 +52,13 @@
 
         <!-- Logo -->
         <div class="navbar-header">
-            <a hre="#" class="navbar-brand" />BLACKBOARD </a>
+            <a hre="#" class="navbar-brand" />BLACKBOARD SYSTEM </a>
         </div>
 
         <!-- Menu on Left -->
         <div>
             <ul class="nav navbar-nav">
-                <li class="active"  > <a href="userhome.php"><span class="glyphicon glyphicon-home"> Home </a> </li>
+                <li class="active"  > <a href="userhome.php"><span class="glyphicon glyphicon-home"></a> </li>
 				<li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Search Subjects<span class="caret"></span></a>
                 <ul class="dropdown-menu">
@@ -88,40 +98,30 @@
         </div>
 
     </div>
+</nav>
 
 </nav>
 
 
-<div class="container-fluid" style="background-color:WHITE>
 
-    <div class="row" >
+    
 
-        <div class="col-xs-2" >
-
-        </div>
-
-        <div class="col-xs-18" style="background-color:WHITE">
-            
-            
-
-            <div class="jumbotron">
-                <h1 align ="center" class="text-success">BLACKBOARD</h1>
-                <p></P>
-
-            <br/><br/>
-            <h3 align="center" class="text-success"><?php echo $update_msg ; ?></h3>
-
-            
+        <div class="col-xs-0" >
 
         </div>
 
-        <div class="col-xs-2" >
+    <div class="col-xs-3" > 
+            
+            
 
-        </div>
+          
+             
+                
+				
 
-    </div>
+  
 
-</div>
+
 <body style="background:url(https://images5.alphacoders.com/437/437927.jpg)"></body>
 
 </body>
