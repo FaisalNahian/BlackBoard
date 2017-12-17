@@ -1,7 +1,13 @@
 <?php
+
 error_reporting(0);
 session_start();
+
 require_once("php/connect.php");
+
+
+
+
 $uid = $_SESSION['uid'];
 ?>
 <html>
@@ -23,7 +29,7 @@ $uid = $_SESSION['uid'];
 
 		
 		<div class="navbar-header">
-			<a hre="#" class="navbar-brand" /> BLACKBOARD </a>
+			<a hre="#" class="navbar-brand" /> BLACKBOARD SYSTEM </a>
 		</div>
 
 		<!-- Menu  Left -->
@@ -52,12 +58,7 @@ $uid = $_SESSION['uid'];
 
                     </ul>
                 </li>
-				
-                
-				
-				
-
-            </ul>
+		  </ul>
 
 
             <!-- Menu  right -->
@@ -134,7 +135,7 @@ mysqli_close($con);
 
 
 
-
+<body style="background:url(http://www.anishdua.com/wp-content/uploads/2016/07/Light-Grey-Background-Hd-5-1.jpg)"></body>
 
 </body>
 

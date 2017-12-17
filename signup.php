@@ -1,7 +1,9 @@
 <?php
 	$user_taken  = "";
+	
 ?>
 <html>
+	
 <head>
 	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<script src="bootstrap/js/jquery-1.12.2.js"></script>
@@ -49,7 +51,7 @@
 	</script>
 </head>
 		
-<body style=" background:url(http://nzprincipal.co.nz/wp-content/uploads/2015/03/blackboard-bg-resized.jpg)">
+<body >
 
     <nav class="navbar navbar-inverse">
 	
@@ -57,7 +59,7 @@
 		
 			<!-- Logo -->
 			<div class="navbar-header">
-				<a href="index.php" class="navbar-brand" /> BLACKBOARD </a>
+				<a href="index.php" class="navbar-brand" /> BLACKBOARD SYSTEM </a>
 			</div>
 	
 			<!-- Menu on the right -->
@@ -87,18 +89,18 @@
 			<!-- Sign up form -->
 			<form role="form" method="post" action="php/signup.php" onsubmit="return validatePassword()">
 			<div class="form" align="center">
-			<h2 style="color:white"> <strong> Sign-Up </strong> </h2>
+			<h2> <strong> Sign-Up </strong> </h2>
 			<br/><br/>
 			
 			<input type="text" class="form-control" name="username"  placeholder="User Name" aria-describedby="basic-addon1" required ><br/><br/>
 			
+			<input type="text" class="form-control" name="email"  placeholder="Email Id" aria-describedby="basic-addon1" required > <br/><br/>
+
+			<input type="text" class="form-control" name="mobile"  placeholder="Mobile Number" aria-describedby="basic-addon1" required > <br/><br/>
+
 			<input type="password" class="form-control" name="password" id="pwd1" placeholder="Password" aria-describedby="basic-addon1"  required > <br/><br/>
 			
 			<input type="password" class="form-control" name="password" placeholder="Confirm Password" id="pwd2" aria-describedby="basic-addon1"  required > <br/><br/>
-
-			<input type="text" class="form-control" name="email"  placeholder="Email" aria-describedby="basic-addon1" required > <br/><br/>
-
-			<input type="text" class="form-control" name="mobile"  placeholder="Phone" aria-describedby="basic-addon1" required > <br/><br/>
 			
 			<input type="text" class="form-control" name="student_id"  placeholder="Student ID" aria-describedby="basic-addon1" required > <br/><br/>
 
@@ -117,5 +119,6 @@
      
     </div>
 
+<body  style=" background:url(https://i.pinimg.com/originals/8d/2f/16/8d2f16132c197bf7298aee78483f8fcc.jpg)"></body>
 </body>
 </html>
