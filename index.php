@@ -107,22 +107,45 @@
 
         <h1>Welcome to Blackboard!</h1>
         <p>This site is for students and teachers.</p>
-        <p><a class="btn btn-primary btn-lg" href="signup.php" role="button">Sign Up &raquo;</a>
+        <p><a class="btn btn-primary btn-lg"     href="signup.php" role="button">Sign Up &raquo;</a>
         <a class="btn btn-primary btn-lg" href="adminlogin.php" role="button">Instructors Area &raquo;</a></p>
       </div>
     </div>
 
-    <div class="container">
-      <hr>
-
-   		<!-- footer -->
-   		<footer class="footer">
-		
-		<div class="container-fluid">
-   			<p>&middot; <a href="#">Password Recovery</a> &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-			<p>Blackboard Project for NYIT CSCI 760 Database Course: Made by Faisal Nahian, Robert Maldonado and Siddharth Mogulla. Powered by <a href="http://getbootstrap.com">Bootstrap</a> and <a href="http://heyfaisal.com">heyfaisal.com</a>.</p>
-		</footer> <!-- end of footer -->
-    </div> <!-- end of container -->
-<body  style=" background:url(http://dbakevlar.com/wp-content/uploads/2016/02/gray-background-8440-8763-hd-wallpapers.jpg)"></body>
+<body  style=" background:url(http://abettertodaymedia.com/wp-content/uploads/2015/12/Light-Grey-Background-Hd-5.jpg)"></body>
 	</body>
+	<link href="bootstrap/css/bootstrap1.css" rel="stylesheet">
+	
+	<div class="footer-bottom">
+
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-xs-30 col-sm-10 col-md-10 col-lg-10">
+
+				<div class="copyright">
+
+					© 1984-2018, Blackboard, All rights reserved
+					<p>&middot; <a href="#">Password Recovery</a> &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+			<p>Blackboard Project for NYIT CSCI 760 Database Course: Made by Faisal Nahian, Robert Maldonado and Siddharth Mogulla. Powered by <a href="http://getbootstrap.com">Bootstrap</a> and <a href="http://heyfaisal.com">heyfaisal.com</a>.</p>
+				</div>
+
+			</div>
+
+			<div class="col-xs-30 col-sm-10 col-md-10 col-lg-10">
+
+				<div class="design">
+
+					 
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
 </html>
