@@ -58,7 +58,7 @@ vertical-align: text-top;
 
 
 width:925px;
-height:700px;
+height:1000px;
 margin:auto;
 margin-top:25px;
 margin-bottom:25px;
@@ -78,6 +78,12 @@ font-size:28px;
 
 }
 
+#tablecontainer a:hover {
+
+text-decoration:none;
+
+}
+
 #tablecontainer input {
 
 
@@ -85,8 +91,18 @@ font-size:28px;
 }
 
 
+#tablecolumn a:hover {
+
+text-decoration: none;
+
+}
 
 
+.tablecolumn a:hover{
+
+text-decoration: none;
+
+}
 
 
 

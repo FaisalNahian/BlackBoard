@@ -14,10 +14,8 @@
         <div>
             <ul class="nav navbar-nav">
                 <li class="active"  > <a href="home.php"> Home </a> </li>
-                <li  > <a href="create.php"> Upload Assignment </a> </li>
-
-                <li > <a href="delete.php"> Delete Assignment </a> </li>
-                <li > <a href="adminsearch.php"> View My Classes </a> </li>
+                
+                <li > <a href="rViewClass.php"> View My Classes </a> </li>
 				<li > <a href="adduser.php"> Add User</a> </li>
 				<li > <a href="adminreserve.php"> View Registered Classes</a> </li>
 				<li > <a href="adminborrow.php"> View Registered Students</a> </li>

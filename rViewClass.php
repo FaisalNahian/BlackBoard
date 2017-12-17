@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once("php/connect.php");
+require_once("rConnect.php");
 
 //include 'connect.php';
 include 'rNavBar.php';
@@ -40,16 +40,24 @@ if ($result->num_rows > 0) {
         			<div style='width:100px; float: left;'> 
        				  ". $row["class_title"]. "
        				</div> 
-       				<div style='width:375px; float:left;'>
+       				<div style='width:350px; float:left;'>
        				  " . $row["class_desc"] . "
         			</div>
         			
         		
-        			<div style='width:350px; float:left;'>
-        					<a href='rtest.php?view=" . $row["class_id"] . "' style=' float:left;  text-align:left; margin-left:5px;' >View</a>
+        			<div style='width:375px; float:left;'>
+        			
+        			<form action='rViewAssignments.php' method='post' style='float:left; padding-top:30px;'>
+        			
+        			<button type='submit' name='class_id' value='".$row["class_id"]."' style=' float:left; height:21px; line-height:18px; width:50px; font-size:11px; margin-left:5px;'> View </button>
         					
-        					<form action='rUpload.php?class=".$row["class_id"]."' method='post' enctype='multipart/form-data' style='float:left; padding-top:30px; margin-left:50px;'>
+        					
+        				</form>	
+        					<form action='rUpload.php' method='post' enctype='multipart/form-data' style='float:left; padding-top:30px; margin-left:50px;'>
         						<input style=' float:left; width:200px;' id='upload' type='file' name='file'> 
+        						
+        						<input type='hidden' value='".$row["class_id"]."' name='class_id' />
+        						
         						<button type='submit' name='btn-upload' style='float:left; height:21px; line-height:18px; width:50px; font-size:11px;' type='submit'> upload </button>
         					</form>
         					
