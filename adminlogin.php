@@ -65,14 +65,41 @@
 </head>
 		
 <body >
+    <nav class="navbar navbar-inverse">	
+		<div class="container">			
+			<div class="navbar-header">
+				<a href="#" class="navbar-brand" />Blackboard</a>
+			</div>	
 
+	        <div id="navbar" class="navbar-collapse collapse">
+	        	<ul class="nav navbar-nav">
+					<li class="active"><a href="index.php"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+					<li><a href="userhome.php"><span class="glyphicon glyphicon-user"></span> Students Area</a></li>
+					<li><a href="signup.php"><span class="glyphicon glyphicon-log-in"></span> Sign-Up</a></li>
+				</ul>
+
+				<!-- Signin form -->
+		        <form class="navbar-form navbar-right" method="post" action="php/login.php" role="form">
+		            <div class="form-group">
+		              <input type="text" name="username" placeholder="Username" class="form-control">
+		            </div>
+		            <div class="form-group">
+		              <input type="password" name="pass" placeholder="Password" class="form-control">
+		            </div>
+		            <button type="submit" name="btnsub" class="btn btn-success">Sign in</button>
+		        </form>
+	        </div><!--/.navbar-collapse -->
+			</div>
+		</div>
+	</nav>
+<!--
     <nav class="navbar navbar-inverse">
 	
 		<div class="container-fluid">
 		
 			
 			<div class="navbar-header">
-				<a hre="#" class="navbar-brand " />BLACKBOARD </a>
+				<a hre="#" class="navbar-brand " />Blackboard</a>
 			</div>
 			
 			
@@ -88,7 +115,7 @@
 			
 		</div>
 		
-	</nav>
+	</nav>-->
    
    <div class="container-fluid">
          
@@ -125,8 +152,8 @@
 			<br/><span class="text-success" ><?php echo $recover_success_var; ?> </span>
 			<form method="post" action="php/adminlogincheck.php" role="form">
 			
-			<input type="text" class="form-control" name="username" placeholder="username" aria-describedby="basic-addon1" required> <br/><br/>
-			<input type="password" class="form-control" name="pass" placeholder="Enter Your Password" aria-describedby="basic-addon1" required><br/><br/> <br/>
+			<input type="text" class="form-control" name="username" placeholder="Username" aria-describedby="basic-addon1" required> <br/><br/>
+			<input type="password" class="form-control" name="pass" placeholder="Password" aria-describedby="basic-addon1" required><br/><br/> <br/>
 			<input class="btn btn-primary btn-lg" type="submit" name="btnsub" value="Login"  style=" width:100%"/><br/><br/>
 
 			</form>
@@ -138,8 +165,15 @@
     </div>
      
     </div>
- <body  style=" background:url(https://i.pinimg.com/originals/8d/2f/16/8d2f16132c197bf7298aee78483f8fcc.jpg)"></body>
+ <!--<body  style=" background:url(https://i.pinimg.com/originals/8d/2f/16/8d2f16132c197bf7298aee78483f8fcc.jpg)"></body>-->
+     <div class="container">
+      <hr>
+   		<!-- footer -->
+   		<footer class="footer">
+   			<p>&middot; <a href="#">Password Recovery</a> &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+			<p>Blackboard Project for NYIT CSCI 760 Database Course: Made by Faisal Nahian, Robert Maldonado and Siddharth Mogulla. Powered by <a href="http://getbootstrap.com">Bootstrap</a> and <a href="http://heyfaisal.com">heyfaisal.com</a>.</p>
+		</footer> <!-- end of footer -->
+    </div> <!-- end of container -->
    
 </body>
-	
 </html>
