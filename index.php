@@ -16,9 +16,9 @@
 ?>
 <html>
 	<head>
-		<meta charset="utf-8"><!--
+		<meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">-->
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
 	    <meta name="description" content="Blackboard Project for NYIT CSCI 760 Database Course">
 	    <meta name="author" content="Faisal Nahian, Robert Maldonado and Siddharth Mogulla">
 	    <link rel="icon" href="images/favicon.ico">
@@ -66,14 +66,14 @@
     <nav class="navbar navbar-inverse">	
 		<div class="container">			
 			<div class="navbar-header">
-				<a href="#" class="navbar-brand" />Blackboard</a>
+				<a href="index.php" class="navbar-brand" />Blackboard</a>
 			</div>	
 
 	        <div id="navbar" class="navbar-collapse collapse">
 	        	<ul class="nav navbar-nav">
 					<li class="active"><a href="index.php"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-					<li><a href="adminlogin.php"><span class="glyphicon glyphicon-user"></span> Instructors Area</a></li>
-					<li><a href="signup.php"><span class="glyphicon glyphicon-log-in"></span> Sign-Up</a></li>
+					<li><a href="adminlogin.php"><span class="glyphicon glyphicon-log-in"></span> Instructors Area</a></li>
+					<li><a href="signup.php"><span class="glyphicon glyphicon-user"></span> Sign up</a></li>
 				</ul>
 
 				<!-- Signin form -->

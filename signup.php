@@ -42,7 +42,7 @@
 				}
 				else
 				{
-					alert(" Passwords Do Not Match !");
+					alert(" Passwords do not match!");
 					return false;
 				}
 				
@@ -52,30 +52,33 @@
 </head>
 		
 <body >
-
-    <nav class="navbar navbar-inverse">
-	
-		<div class="container-fluid">
-		
-			<!-- Logo -->
+    <nav class="navbar navbar-inverse">	
+		<div class="container">			
 			<div class="navbar-header">
-				<a href="index.php" class="navbar-brand" /> BLACKBOARD SYSTEM </a>
-			</div>
-	
-			<!-- Menu on the right -->
-			
-				<ul class="nav navbar-nav navbar-right">
-					
-					<li> <a href="index.php"><span class="glyphicon glyphicon-log-in"> Log-In </a> </li>
-				
+				<a href="index.php" class="navbar-brand" />Blackboard</a>
+			</div>	
+
+	        <div id="navbar" class="navbar-collapse collapse">
+	        	<ul class="nav navbar-nav">
+					<li><a href="index.php"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+					<li><a href="userhome.php"><span class="glyphicon glyphicon-log-in"></span> Students Area</a></li>
+					<li class="active"><a href="signup.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
 				</ul>
-			
+
+				<!-- Signin form -->
+		        <form class="navbar-form navbar-right" method="post" action="php/login.php" role="form">
+		            <div class="form-group">
+		              <input type="text" name="username" placeholder="Username" class="form-control">
+		            </div>
+		            <div class="form-group">
+		              <input type="password" name="pass" placeholder="Password" class="form-control">
+		            </div>
+		            <button type="submit" name="btnsub" class="btn btn-success">Sign in</button>
+		        </form>
+	        </div><!--/.navbar-collapse -->
 			</div>
-			
 		</div>
-		
 	</nav>
-   
    <div class="container-fluid">
          
     <div class="row">
@@ -88,27 +91,19 @@
 			
 			<!-- Sign up form -->
 			<form role="form" method="post" action="php/signup.php" onsubmit="return validatePassword()">
-			<div class="form" align="center">
-			<h2> <strong> Sign-Up </strong> </h2>
-			<br/><br/>
-			
-			<input type="text" class="form-control" name="username"  placeholder="User Name" aria-describedby="basic-addon1" required ><br/><br/>
-			
-			<input type="text" class="form-control" name="email"  placeholder="Email Id" aria-describedby="basic-addon1" required > <br/><br/>
-
-			<input type="text" class="form-control" name="mobile"  placeholder="Mobile Number" aria-describedby="basic-addon1" required > <br/><br/>
-
-			<input type="password" class="form-control" name="password" id="pwd1" placeholder="Password" aria-describedby="basic-addon1"  required > <br/><br/>
-			
-			<input type="password" class="form-control" name="password" placeholder="Confirm Password" id="pwd2" aria-describedby="basic-addon1"  required > <br/><br/>
-			
-			<input type="text" class="form-control" name="student_id"  placeholder="Student ID" aria-describedby="basic-addon1" required > <br/><br/>
-
-			<input class="btn btn-primary btn-lg" type="submit" name="btnsubmit" value="Register"  style=" width:auto"/><br/>
-			
-			</div>
-			</form>
-			
+				<div class="form" align="center">
+				<h2> <strong> Sign-Up </strong> </h2>
+				<br/><br/>
+				
+				<input type="text" class="form-control" name="username"  placeholder="Username" aria-describedby="basic-addon1" required ><br/><br/>			
+				<input type="password" class="form-control" name="password" id="pwd1" placeholder="Password" aria-describedby="basic-addon1" required ><br/><br/>
+				<input type="password" class="form-control" name="password" placeholder="Confirm Password" id="pwd2" aria-describedby="basic-addon1" required ><br/><br/>
+				<input type="text" class="form-control" name="email"  placeholder="Email" aria-describedby="basic-addon1" required ><br/><br/>
+				<input type="text" class="form-control" name="mobile"  placeholder="Phone Number" aria-describedby="basic-addon1" required ><br/><br/>						
+				<input type="text" class="form-control" name="student_id"  placeholder="Student ID" aria-describedby="basic-addon1" required ><br/><br/>
+				<input class="btn btn-primary btn-lg" type="submit" name="btnsubmit" value="Register"  style=" width:auto"/><br/>			
+				</div>
+			</form>			
 		</div>
          
 		<div class="col-xs-4" >
@@ -119,6 +114,6 @@
      
     </div>
 
-<body  style=" background:url(https://i.pinimg.com/originals/8d/2f/16/8d2f16132c197bf7298aee78483f8fcc.jpg)"></body>
+<body  style=" background:url(http://dbakevlar.com/wp-content/uploads/2016/02/gray-background-8440-8763-hd-wallpapers.jpg)"></body>
 </body>
 </html>
