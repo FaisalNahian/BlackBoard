@@ -7,7 +7,7 @@
 	if(isset($_SESSION['login_error']))
 	{
 		
-		$login_error = "Invalid Username or Password!";
+		$login_error = " Invalid Username / Password ! " ;
 		
 		session_unset();
 		session_destroy();
@@ -63,7 +63,7 @@
 </head>
 		
 <body >	
-    <nav class="navbar navbar-inverse">	
+     <nav class="navbar navbar-inverse">	
 		<div class="container">			
 			<div class="navbar-header">
 				<a href="index.php" class="navbar-brand" />Blackboard</a>
@@ -96,43 +96,56 @@
     <div class="jumbotron">
       <div class="container">
 
-      	    	<?php
-
-				if(isset($_SESSION['success']))
-            	{
-            					?> <div class="alert alert-success">
-                                  <a href="#" class="close" data-dismiss="alert" aria-label="close" hide="true" id="xxx">&times;</a>
-                                  <strong text-align="center">Success: You have been successfully registered!</strong>
-                                </div>
-                                <?php
-                                session_destroy();
-            	}
-
-            ?>
-		<!-- login error output -->
+      	    			<!-- login error output -->
 		<div align="center" class="mylogin">
 			<br/>
-			<br/><span class="text-danger" ><?php echo $login_error; ?> </span>
-			<br/><span class="text-danger" ><?php echo $recover_error_var; ?> </span>
-			<br/><span class="text-success" ><?php echo $recover_success_var; ?> </span>
+			<br/><span class="text-danger" > </span>
+			<br/><span class="text-danger" > </span>
+			<br/><span class="text-success" > </span>
 		</div>
 
 
         <h1>Welcome to Blackboard!</h1>
         <p>This site is for students and teachers.</p>
-        <p><a class="btn btn-primary btn-lg" href="signup.php" role="button">Sign Up &raquo;</a>
+        <p><a class="btn btn-primary btn-lg"     href="signup.php" role="button">Sign Up &raquo;</a>
         <a class="btn btn-primary btn-lg" href="adminlogin.php" role="button">Instructors Area &raquo;</a></p>
       </div>
     </div>
 
-    <div class="container">
-      <hr>
-   		<!-- footer -->
-   		<footer class="footer">
-   			<p>&middot; <a href="#">Password Recovery</a> &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-			<p>Blackboard Project for NYIT CSCI 760 Database Course: Made by Faisal Nahian, Robert Maldonado and Siddharth Mogulla. Powered by <a href="http://getbootstrap.com">Bootstrap</a> and <a href="http://heyfaisal.com">heyfaisal.com</a>.</p>
-		</footer> <!-- end of footer -->
-    </div> <!-- end of container -->
-
+<body  style=" background:url(http://abettertodaymedia.com/wp-content/uploads/2015/12/Light-Grey-Background-Hd-5.jpg)"></body>
 	</body>
+	<link href="bootstrap/css/bootstrap1.css" rel="stylesheet">
+	
+	<div class="footer-bottom">
+
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-xs-30 col-sm-10 col-md-10 col-lg-10">
+
+				<div class="copyright">
+
+					© 1984-2018, Blackboard, All rights reserved
+					<p>&middot; <a href="#">Password Recovery</a> &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+			<p>Blackboard Project for NYIT CSCI 760 Database Course: Made by Faisal Nahian, Robert Maldonado and Siddharth Mogulla. Powered by <a href="http://getbootstrap.com">Bootstrap</a> and <a href="http://heyfaisal.com">heyfaisal.com</a>.</p>
+				</div>
+
+			</div>
+
+			<div class="col-xs-30 col-sm-10 col-md-10 col-lg-10">
+
+				<div class="design">
+
+					 
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
 </html>
