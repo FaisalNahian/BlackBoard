@@ -5,25 +5,24 @@
 
     <div class="container-fluid">
 
-        <!-- Logo -->
-      <!-- // <div class="navbar-header" >
-        //    <a hre="#" class="navbar-brand"/> BLACKBOARD </a>
+        Logo
+      <div class="navbar-header" >
+         <a hre="#" class="navbar-brand"/> BLACKBOARD </a>
         </div>
--->
-        <!-- Menu on Left -->
+        Menu on Left
         <div>
             <ul class="nav navbar-nav">
-                <li class="active"  > <a href="home.php"> Home </a> </li>
-                
-                <li > <a href="rViewClass.php"> View My Classes </a> </li>
-				<li > <a href="adduser.php"> Add User</a> </li>
+                <li class="#"  > <a href="home.php"> Home </a> </li>
+               
+                <li class="active"> <a href="rViewClass.php"> View My Classes </a> </li>
+			<!--	<li > <a href="adduser.php"> Add User</a> </li>
 				<li > <a href="adminreserve.php"> View Registered Classes</a> </li>
-				<li > <a href="adminborrow.php"> View Registered Students</a> </li>
+				<li > <a href="adminborrow.php"> View Registered Students</a> </li>-->
 				
 				<li > <a href="admindisplay.php"> Display All Students</a> </li>
 				<li > <a href="adminassignments.php"> Display All Assignments</a> </li>
-				<!--
-				<ul class="nav navbar-nav navbar-left">
+				
+			<!--	<ul class="nav navbar-nav navbar-left">
 				<li class="dropdown">
 				
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"> More Options <span class="caret"></span></a>
@@ -32,27 +31,28 @@
 						<li><a href="freqborrowedbook.php">Recently Updated Assignments</a></li>
 						<li><a href="freqborrowerb.php">Recently Graded Assignments</a></li>
 						
-						</ul>
+						</ul>-->
 
                     </ul>
                     
-                    -->
+                   
                 </li>
 				
 				
 
             </ul>
-
-
-            <!-- Menu on the right -->
+ <!-- Menu  right -->
             <ul class="nav navbar-nav navbar-right">
-               <li class="dropdown">
-			   
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> <?php echo $uid ; ?> <span class="caret"></span></a>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> <?php echo "admin"; ?><span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="php/logout.php">Log-Out</a></li>
 
                     </ul>
+                </li>
+
+            </ul>
+
                 </li>
 
             </ul>

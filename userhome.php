@@ -177,7 +177,8 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
                             <table class="table">
 							<tr>
                                     <td>
-                                        <li class="active"><a href="#" data-target-id="5"><i></i>Database Systems</a></li>
+                                        <li class="active"><a href="course_db.php" data-target-id="5"><i></i>Database Systems</a></li>
+										
                                     </td>
                                 </tr>
                                 <tr>
@@ -262,8 +263,8 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 				<p>Learn about Blackboard instructor app</p>
 				<p>Watch instructors helpful Blackboard guide videos</p>
 				</p>
-				<a href="#1" class="yndzuxt" data-toggle="modal" data-target="#lightbox2">
-								<br></br>
+				<br><a href="#2" class="yndzuxt" data-toggle="modal" data-target="#lightbox2">
+								</br>
 							</a>
                </div>
 			   </div>

@@ -79,7 +79,7 @@
 				</ul>
 
 				<!-- Signin form -->
-		        <form class="navbar-form navbar-right" method="post" action="php/login.php" role="form">
+		        <form class="navbar-form navbar-right" method="post" action="php/adminlogincheck.php" role="form">
 		            <div class="form-group">
 		              <input type="text" name="username" placeholder="Username" class="form-control">
 		            </div>
@@ -117,7 +117,7 @@
 		
 	</nav>-->
    
-   <div class="container-fluid">
+ <!--  <div class="container-fluid">
          
     <div class="row">
 
@@ -130,26 +130,13 @@
 		</div>
 
 		<div class="col-xs-4" style="background-color:rgba(202, 205, 205, 0.100) " id="menu">
-			<?php
-
-				if(isset($_SESSION['success']))
-            	{
-            					?> <div class="alert alert-success">
-                                  <a href="#" class="close" data-dismiss="alert" aria-label="close" hide="true" id="xxx">&times;</a>
-                                  <strong text-align="center">Success: You have been successfully registered !</strong>
-                                </div>
-                                <?php
-                                session_destroy();
-            	}
-
-            ?>
-
+			
 			<div align="center" class="mylogin">
 				<br/>
 			<h1> <strong>LOG-IN </strong></h1>
-			<br/><span class="text-danger" ><?php echo $login_error; ?> </span>
-			<br/><span class="text-danger" ><?php echo $recover_error_var; ?> </span>
-			<br/><span class="text-success" ><?php echo $recover_success_var; ?> </span>
+			<br/><span class="text-danger" > </span>
+			<br/><span class="text-danger" > </span>
+			<br/><span class="text-success" > </span>
 			<form method="post" action="php/adminlogincheck.php" role="form">
 			
 			<input type="text" class="form-control" name="username" placeholder="Username" aria-describedby="basic-addon1" required> <br/><br/>
@@ -163,17 +150,62 @@
          
 		
     </div>
-     
+     -->
+	 <div class="jumbotron">
+      <div class="container">
+
+      	    			<!-- login error output -->
+		<div align="center" class="mylogin">
+			<br/>
+			<br/><span class="text-danger" > </span>
+			<br/><span class="text-danger" > </span>
+			<br/><span class="text-success" > </span>
+		</div>
+
+
+        <h1>Welcome to Blackboard!</h1>
+        <p>Log-In is ristricted for students</p>
+        <p><a class="btn btn-primary btn-lg"     href="signup.php" role="button">Sign Up &raquo;</a>
+        <a class="btn btn-primary btn-lg" href="index.php" role="button">Student Area &raquo;</a></p>
+      </div>
     </div>
- <!--<body  style=" background:url(https://i.pinimg.com/originals/8d/2f/16/8d2f16132c197bf7298aee78483f8fcc.jpg)"></body>-->
-     <div class="container">
-      <hr>
-   		<!-- footer -->
-   		<footer class="footer">
-   			<p>&middot; <a href="#">Password Recovery</a> &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+		
+    </div>
+	 
+   <link href="bootstrap/css/bootstrap1.css" rel="stylesheet">
+	
+	<div class="footer-bottom">
+
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-xs-30 col-sm-10 col-md-10 col-lg-10">
+
+				<div class="copyright">
+
+					© 1984-2018, Blackboard, All rights reserved
+					<p>&middot; <a href="#">Password Recovery</a> &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
 			<p>Blackboard Project for NYIT CSCI 760 Database Course: Made by Faisal Nahian, Robert Maldonado and Siddharth Mogulla. Powered by <a href="http://getbootstrap.com">Bootstrap</a> and <a href="http://heyfaisal.com">heyfaisal.com</a>.</p>
-		</footer> <!-- end of footer -->
-    </div> <!-- end of container -->
-   
+				</div>
+
+			</div>
+
+			<div class="col-xs-30 col-sm-5 col-md-5 col-lg-20">
+
+				<div class="design">
+
+					 
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+<body  style=" background:url(http://abettertodaymedia.com/wp-content/uploads/2015/12/Light-Grey-Background-Hd-5.jpg)"></body>
 </body>
 </html>

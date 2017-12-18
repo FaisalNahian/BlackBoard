@@ -9,7 +9,7 @@ include 'rTempBody.php';
 
 $host = "localhost";
 $username ="root";
-$password = "root";
+$password = "";
 $dbname = "blackboard_db";
 
 // Create connection

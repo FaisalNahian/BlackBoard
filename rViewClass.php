@@ -1,10 +1,11 @@
 <?php
 session_start();
+ 
 require_once("rConnect.php");
 
 //include 'connect.php';
-include 'rNavBar.php';
-include 'rTempBody.php';
+include ('rNavBar.php');
+include ('rTempBody.php');
 ?>
 
 

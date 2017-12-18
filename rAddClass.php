@@ -23,13 +23,13 @@ include 'rTempBody.php';
 
 <div id="formcontainer">
 
-<h3 style="margin-bottom:25px;">Would You like To Add A Class</h3>
+<h3 style="margin-bottom:25px;">Would You like To Add Assignments</h3>
 
 <form method="post">
 	
 	<input type="text" name="class_title" id="title" placeholder="Course Name" maxlength="7">
 	
-	<textarea type="text" name="class_desc" maxlength="40" id="desc" placeholder="Description of Class"></textarea>
+	<textarea type="text" name="class_desc" maxlength="40" id="desc" placeholder="Description of Assignment"></textarea>
 	
 	<input type="submit" name="submit" value="submit" style="margin-top:25px; float:right; background:rgba(150,235,120,1); text-align:left;" >
 </form>
@@ -44,7 +44,7 @@ include 'rTempBody.php';
 
 $host = "localhost";
 $username ="root";
-$password = "root";
+$password = "";
 $dbname = "blackboard_db";
 
 // Create connection

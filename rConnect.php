@@ -2,7 +2,7 @@
 // Enter your Host, username, password, database below.
 // I left password empty because i do not set password on localhost.
 
-$conn = mysqli_connect("localhost","root","root","blackboard_db");
+$conn = mysqli_connect("localhost","root","","blackboard_db");
 // Check connection
 if (mysqli_connect_errno())
   {
@@ -11,7 +11,7 @@ if (mysqli_connect_errno())
   
   $host= "localhost";
  $username="root";
- $password="root";
+ $password="";
  $dbname="blackboard_db";
   
   

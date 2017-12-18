@@ -22,6 +22,7 @@
 	    <meta name="description" content="Blackboard Project for NYIT CSCI 760 Database Course">
 	    <meta name="author" content="Faisal Nahian, Robert Maldonado and Siddharth Mogulla">
 	    <link rel="icon" href="images/favicon.ico">
+		
    		<title>Blackboard</title>
 
 	    <!-- Bootstrap files --> 
@@ -104,7 +105,7 @@
 			<br/><span class="text-success" > </span>
 		</div>
 
-
+<img src='http://teachingcenter.wustl.edu/wp-content/uploads/2016/01/Blackboard.jpg'/>
         <h1>Welcome to Blackboard!</h1>
         <p>This site is for students and teachers.</p>
         <p><a class="btn btn-primary btn-lg"     href="signup.php" role="button">Sign Up &raquo;</a>
@@ -133,7 +134,7 @@
 
 			</div>
 
-			<div class="col-xs-30 col-sm-10 col-md-10 col-lg-10">
+			<div class="col-xs-30 col-sm-5 col-md-5 col-lg-20">
 
 				<div class="design">
 
