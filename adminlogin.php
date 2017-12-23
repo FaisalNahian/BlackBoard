@@ -71,8 +71,8 @@
 					<li><a href="signup.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
 				</ul>
 
-				<!-- Signin form -->
-		        <form class="navbar-form navbar-right" method="post" action="php/login.php" role="form">
+				<!-- Signin form disabled 
+				    <form class="navbar-form navbar-right" method="post" action="php/login.php" role="form">
 		            <div class="form-group">
 		              <input type="text" name="username" placeholder="Username" class="form-control">
 		            </div>
@@ -81,7 +81,7 @@
 		            </div>
 		            <button type="submit" name="btnsub" class="btn btn-success">Sign in</button>
 		        </form>
-	        </div><!--/.navbar-collapse -->
+	        </div> navbar-collapse -->
 			</div>
 		</div>
 	</nav>

@@ -1,5 +1,8 @@
 <?php
+session_start();
+require_once("php/connect.php");
 
+/*
 $host = "localhost";
 $username ="root";
 $password = "root";
@@ -7,12 +10,11 @@ $dbname = "blackboard_db";
 
 
 
-// Create connection
+
 $conn = new mysqli($host, $username, $password, $dbname);
-// Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
-} 
+} */
 
  $id = $_POST['assign_id'];
  echo $id;

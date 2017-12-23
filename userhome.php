@@ -18,10 +18,33 @@
     <script src="bootstrap/js/jquery-1.12.2.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <title>Dashboard</title>
+
+    <script>
+    $(document).ready(function()
+    {
+        var navItems = $('.admin-menu li > a');
+        var navListItems = $('.admin-menu li');
+        var allWells = $('.admin-content');
+        var allWellsExceptFirst = $('.admin-content:not(:first)');
+        
+        allWellsExceptFirst.hide();
+        navItems.click(function(e)
+        {
+            e.preventDefault();
+            navListItems.removeClass('active');
+            $(this).closest('li').addClass('active');
+            
+            allWells.hide();
+            var target = $(this).attr('data-target-id');
+            $('#' + target).show();
+        });
+    });
+    </script>
+
 </head>
 <body>
 
-<?php
+            <?php
 
 				if(isset($_SESSION['success']))
             	{
@@ -56,7 +79,7 @@
 
                     <ul class="dropdown-menu">
                         <li><a href="php/edit-profile.php"><span class="glyphicon glyphicon-edit"></span> Edit Profile</a></li>
-			     		<li><a href="php/index.php"><span class="glyphicon glyphicon-off"></span> Log out</a></li>
+			     		<li><a href="index.php"><span class="glyphicon glyphicon-off"></span> Log out</a></li>
                     </ul>
                 </li>
             </ul>
@@ -66,7 +89,6 @@
     <div class="row">
         <div class="col-sm-3 col-md-3">
             
-
             <div class="panel-group" id="accordion">
             
                 <div class="panel panel-default">
@@ -105,7 +127,7 @@
                 
                 </div> <!-- end of panel default -->
                 
-               <div class="panel panel-default">
+                <div class="panel panel-default">
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a data-toggle="collapse" data-target-id="7" data-parent="#accordion" href="#collapseFoure">Helpline Assistance</a>
@@ -127,8 +149,8 @@
                         </div>
                     </div>
                 </div><!-- end of panel default -->
-	</div> <!-- end of accordion -->
-</div> <!-- end of column -->
+	        </div><!-- end of accordion -->
+        </div><!-- end of column -->
         
 
         <div class="col-sm-6 col-md-6 well " id="1">
@@ -139,8 +161,8 @@
 				<a href="#1" class="yndzuxt" data-toggle="modal" data-target="#lightbox2"></a>
 				<p style="text-align: right;">More Announcement....</p></br>				
             </div>
-	    </div>
-			   
+	    </div><!-- end of column -->
+		<!--	   
 	    <div class="col-sm-6 col-md-6 well " id="2">
             <div class="well">
                 <h3>No Demand Help</h3>
@@ -149,90 +171,57 @@
 				<p>Learn about the Blackboard app</p>
 				<p>Watch students helpful Blackboard guide videos</p>
 				
-				<h4>Help for Instructors</h4>				
+				<h4>Help for Instructors</h4>
 				<p>Visit Blackboard Help for instructors</p>
 				<p>Explore online teaching stratergies and best practices</p>
 				<p>Learn about Blackboard instructor app</p>
 				<p>Watch instructors helpful Blackboard guide videos</p>
 				</p>
 				<a href="#1" class="yndzuxt" data-toggle="modal" data-target="#lightbox2"></a>
-				<br></br>							
+				</br>
             </div>
-		</div>
+		</div> end of column -->
 
 		   
-<div class="col-sm-3 col-md-3 sidebar-offcanvas" id="sidebar">
-    <div class="panel-group" id="accordion">
-        <div class="panel panel-default">
+        <div class="col-sm-3 col-md-3 sidebar-offcanvas" id="sidebar">
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a data-toggle="collapse" data-target-id="6" data-parent="#accordion" href="#collapseThree">My Courses</a>
                         </h4>
                     </div>
 
-                    <div id="collapseThree" class="panel-collapse">
-                        <div class="panel-body">
-                            <table class="table">
-                            <tr>
-                                    <td>
+                        <div id="collapseThree" class="panel-collapse">
+                            <div class="panel-body">
+                                <table class="table">
+                                    <tr><td>
                                         <li class="active"><a href="#" data-target-id="5"><i></i>Database Systems</a></li>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <li class="active"><a href="#" data-target-id="6"><i></i>Computer Architecture-|</a></li>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
+                                    </td></tr>
+                                    <tr><td>
+                                        <li class="active"><a href="#" data-target-id="6"><i></i>Computer Architecture-I</a></li>
+                                    </td></tr>
+                                    <tr><td>
                                         <li class="active"><a href="#" data-target-id="5"><i></i>Computer Networks</a></li>
                                     </td></tr>
-                                    <tr>
-                                    <td>
+                                    <tr><td>
                                         <li class="active"><a href="#" data-target-id="5"><i></i>Software Engineering</a></li>
                                     </td></tr>
-                                    <tr>
-                                    <td>
+                                    <tr><td>
                                         <li class="active"><a href="#" data-target-id="5"><i></i>Technical English Writing</a></li>
                                     </td></tr>
-                                    <tr>
-                                    <td>
+                                    <tr><td>
                                         <li class="active"><a href="#" data-target-id="5"><i></i>Programming Languages</a></li>
                                     </td></tr>
-                                    <tr>
-                                    <td>
-                                        <li class="active"><a href="#" data-target-id="5"><i></i>Computer Architecture-||</a></li>
+                                    <tr><td>
+                                        <li class="active"><a href="#" data-target-id="5"><i></i>Computer Architecture-II</a></li>
                                     </td></tr>
-                            </table>
+                                </table>
+                            </div>
                         </div>
-                    </div>
-        </div><!-- end of panel default -->
-    </div><!-- end of accordion -->
-</div><!-- end of panel column -->
-
-
-<script>
-$(document).ready(function()
-{
-    var navItems = $('.admin-menu li > a');
-    var navListItems = $('.admin-menu li');
-    var allWells = $('.admin-content');
-    var allWellsExceptFirst = $('.admin-content:not(:first)');
-    
-    allWellsExceptFirst.hide();
-    navItems.click(function(e)
-    {
-        e.preventDefault();
-        navListItems.removeClass('active');
-        $(this).closest('li').addClass('active');
-        
-        allWells.hide();
-        var target = $(this).attr('data-target-id');
-        $('#' + target).show();
-    });
-});
-</script>
-
+                </div><!-- end of panel default -->
+            </div><!-- end of accordion -->
+        </div><!-- end of panel column -->
     </div><!-- end of body row -->
 </div><!-- end of body container -->
 

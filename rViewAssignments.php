@@ -1,17 +1,16 @@
 <?php
 session_start();
-require_once("rConnect.php");
+require_once("php/connect.php");
 
 //include 'connect.php';
 include 'rNavBar.php';
 include 'rTempBody.php';
-
+/*
 $conn = new mysqli($host, $username, $password, $dbname);
-// Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
-
+*/
  $id = $_POST['class_id'];
  
 
