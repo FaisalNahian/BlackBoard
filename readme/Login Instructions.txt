@@ -1,0 +1,25 @@
+Access to Production: 
+http://heyfaisal.com/bb
+Note: Site will be available until 1/31/2018
+
+Login Credentials:
+
+User 
+Username: nik
+Password: NIK
+
+Instructor
+Username: admin
+Password: admin
+
+Github Page:
+https://github.com/FaisalNahian/BlackBoard/
+
+
+Production DB:
+Host: heyfaisal.com
+DB Name: heyfais1_bbdb
+DB Username: heyfais1_bbdb2
+DB Password: Rangers17! 
+
+
