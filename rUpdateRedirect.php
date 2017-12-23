@@ -1,9 +1,9 @@
 <?php  
 
 session_start();
-require_once("php/connect.php");
+require_once("rconnect.php");
 
-/*include 'connect.php';
+//include 'connect.php';
 include 'rNavBar.php';
 include 'rTempBody.php';
 
@@ -12,13 +12,13 @@ $username ="root";
 $password = "root";
 $dbname = "blackboard_db";
 
-
+// Create connection
 $conn = new mysqli($host, $username, $password, $dbname);
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
-*/
+
 $cid = $_POST['class_id'];
 
    $sql="UPDATE assignments 

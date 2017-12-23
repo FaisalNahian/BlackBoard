@@ -11,7 +11,7 @@ $uid = $_SESSION['uid'];
 	<script src="bootstrap/js/jquery-1.12.2.js"></script>
 	<script src="bootstrap/js/bootstrap.min.js"></script>
 
-	<title> Search Book </title>
+	<title>Instructors Display</title>
 	
 </head>
 
@@ -23,7 +23,7 @@ $uid = $_SESSION['uid'];
 
 		
 		<div class="navbar-header">
-			<a hre="#" class="navbar-brand" /> BLACKBOARD SYSTEM </a>
+			<a hre="#" class="navbar-brand" />BLACKBOARD</a>
 		</div>
 
 		<!-- Menu  Left -->
@@ -33,12 +33,12 @@ $uid = $_SESSION['uid'];
                <!--- <li  > <a href="create.php"> Upload Assignment </a> </li>
                 <li > <a href="delete.php"> Delete Assignment </a> </li>-->
                 <li > <a href="rViewClass.php"> View My Classes </a> </li>
-			<!--	<li > <a href="adduser.php"> Add User</a> </li>
+			<!--<li > <a href="adduser.php"> Add User</a> </li>
 				<li > <a href="adminreserve.php"> View Registered Classes</a> </li>
 				<li > <a href="adminborrow.php"> View Registered Students</a> </li>-->
 				
 				<li class="active"> <a href="admindisplay.php"> Display All Students</a> </li>
-				<li > <a href="adminassignments.php"> Display All Assignments</a> </li>
+				<li> <a href="adminassignments.php"> Display All Assignments</a> </li>
 				
 				</ul>
 

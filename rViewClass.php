@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once("php/connect.php");
+require_once("rConnect.php");
 
 //include 'connect.php';
 include 'rNavBar.php';
@@ -23,13 +23,13 @@ include 'rTempBody.php';
 <!-- PHP CODE FOR VIEWING CLASS TABLE-->
 
 <?php
-/*
+// Create connection
 $conn = new mysqli($host, $username, $password, $dbname);
-
+// Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
-*/
+
 $sql = "SELECT * FROM classes";
 $result = $conn->query($sql);
 
