@@ -63,7 +63,7 @@
 		</script>
 </head>
 		
-<body >	
+<body>	
      <nav class="navbar navbar-inverse">	
 		<div class="container">			
 			<div class="navbar-header">
@@ -93,11 +93,10 @@
 	</nav>
 
 
-<!-- Main jumbotron for a primary call to action -->
+	<!-- Main jumbotron for a primary call to action -->
     <div class="jumbotron">
       <div class="container">
-
-      	    			<!-- login error output -->
+		<!-- login error output -->
 		<div align="center" class="mylogin">
 			<br/>
 			<br/><span class="text-danger" > </span>
@@ -106,9 +105,9 @@
 		</div>
 
 
-        <h1>Welcome to <img src='http://www.utsa.edu/trcss/soar/logos/blackboard.png'/>!!</h1>
+        <h1>Welcome to Blackboard!</h1>
         <p>This site is for students and teachers.</p>
-        <p><a class="btn btn-primary btn-lg"     href="signup.php" role="button">Sign Up &raquo;</a>
+        <p><a class="btn btn-primary btn-lg" href="signup.php" role="button">Sign Up &raquo;</a>
         <a class="btn btn-primary btn-lg" href="adminlogin.php" role="button">Instructors Area &raquo;</a></p>
       </div>
     </div>
@@ -116,7 +115,7 @@
 			<div class="container">
 
 				<div class="footer">
-					<p><a href="#">Password Recovery</a> &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+					<p><a href="recovery.php">Password Recovery</a> &middot; <a href="privacy.php">Privacy</a> &middot; <a href="terms.php">Terms</a></p>
 					<p>Blackboard Project for NYIT CSCI 760 Database Course: Made by Faisal Nahian, Robert Maldonado and Siddharth Mogulla. Powered by <a href="http://getbootstrap.com">Bootstrap</a> and <a href="http://heyfaisal.com">heyfaisal.com</a>.</p>
 				</div><!-- end of footer -->
 			</div> <!-- end of container -->

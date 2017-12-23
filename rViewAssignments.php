@@ -1,16 +1,18 @@
 <?php
 session_start();
-require_once("php/connect.php");
+//require_once("php/connect.php");
+// Create connection
+$con = mysqli_connect("localhost","heyfais1_bbdb2","Rangers17!","heyfais1_bbdb");
 
-//include 'connect.php';
+// Check connection
+if (mysqli_connect_errno())
+  {
+  echo "Failed to connect to MySQL DB: " . mysqli_connect_error();
+  }
+
 include 'rNavBar.php';
 include 'rTempBody.php';
-/*
-$conn = new mysqli($host, $username, $password, $dbname);
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-} 
-*/
+
  $id = $_POST['class_id'];
  
 
@@ -28,9 +30,7 @@ if ($conn->connect_error) {
 	</div>
 
 <!-- PHP CODE FOR VIEWING CLASS TABLE-->
-
 <?php
-
 
 $sql = "SELECT * FROM assignments WHERE class_id = '$id'";
 $result = $conn->query($sql);

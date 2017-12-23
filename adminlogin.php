@@ -18,14 +18,8 @@
 	
 <head>
 	
-	
-	
-
 	<link href="bootstrap/global.css" rel="stylesheet" >
-	 
-
-	
-		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<script src="bootstrap/js/jquery-1.12.2.js"></script>
 	<script src="bootstrap/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="bootstrap/css/datepicker.css">
@@ -77,100 +71,57 @@
 					<li><a href="userhome.php"><span class="glyphicon glyphicon-user"></span> Students Area</a></li>
 					<li><a href="signup.php"><span class="glyphicon glyphicon-log-in"></span> Sign-Up</a></li>
 				</ul>
-
-				<!-- Signin form -->
-		        <form class="navbar-form navbar-right" method="post" action="php/login.php" role="form">
-		            <div class="form-group">
-		              <input type="text" name="username" placeholder="Username" class="form-control">
-		            </div>
-		            <div class="form-group">
-		              <input type="password" name="pass" placeholder="Password" class="form-control">
-		            </div>
-		            <button type="submit" name="btnsub" class="btn btn-success">Sign in</button>
-		        </form>
 	        </div><!--/.navbar-collapse -->
 			</div>
 		</div>
-	</nav>
-<!--
-    <nav class="navbar navbar-inverse">
-	
-		<div class="container-fluid">
-		
-			
-			<div class="navbar-header">
-				<a hre="#" class="navbar-brand " />Blackboard</a>
-			</div>
-			
-			
-			
-				<ul class="nav navbar-nav navbar-right">
-				
-					<li> <a href="userhome.php"> <strong><span class="glyphicon glyphicon-home"> MAIN &nbsp;</strong> </a> </li>
-					
-				
-				</ul>
-			
-			</div>
-			
-		</div>
-		
-	</nav>-->
+	</nav><!-- end of navigation -->
    
    <div class="container-fluid">
-         
-    <div class="row">
+   		<div class="row">
 
-		<div class="col-xs-4" >
+   					<div class="col-xs-4" >
 
-		<p>
-		 
-		</p>
+					<p>	</p>
 
-		</div>
+					</div>
 
-		<div class="col-xs-4" style="background-color:rgba(202, 205, 205, 0.100) " id="menu">
-			<?php
+         	<div class="col-xs-4" style="background-color:rgba(202, 205, 205, 0.100) " id="menu">
+				<?php
 
-				if(isset($_SESSION['success']))
-            	{
-            					?> <div class="alert alert-success">
-                                  <a href="#" class="close" data-dismiss="alert" aria-label="close" hide="true" id="xxx">&times;</a>
-                                  <strong text-align="center">Success: You have been successfully registered !</strong>
-                                </div>
-                                <?php
-                                session_destroy();
-            	}
+					if(isset($_SESSION['success']))
+	            	{
+	            					?> <div class="alert alert-success">
+	                                  <a href="#" class="close" data-dismiss="alert" aria-label="close" hide="true" id="xxx">&times;</a>
+	                                  <strong text-align="center">Success: You have been successfully registered!</strong>
+	                                </div>
+	                                <?php
+	                                session_destroy();
+	            	}
 
-            ?>
+	            ?>
 
-			<div align="center" class="mylogin">
-				<br/>
-			<h1> <strong>LOG-IN </strong></h1>
-			<br/><span class="text-danger" ><?php echo $login_error; ?> </span>
-			<br/><span class="text-danger" ><?php echo $recover_error_var; ?> </span>
-			<br/><span class="text-success" ><?php echo $recover_success_var; ?> </span>
-			<form method="post" action="php/adminlogincheck.php" role="form">
+				<div align="center" class="mylogin">
+					<h1><strong>Instructors Area</strong></h1>
+					<h3><strong>Sign in</strong></h3>
+					<br/><span class="text-danger" ><?php echo $login_error; ?> </span>
+					<br/><span class="text-danger" ><?php echo $recover_error_var; ?> </span>
+					<br/><span class="text-success" ><?php echo $recover_success_var; ?> </span>
+					<form method="post" action="php/adminlogincheck.php" role="form">					
+					<input type="text" class="form-control" name="username" placeholder="Username" aria-describedby="basic-addon1" required> <br/>
+					<input type="password" class="form-control" name="pass" placeholder="Password" aria-describedby="basic-addon1" required><br/>
+					<input class="btn btn-primary btn-lg" type="submit" name="btnsub" value="Login"  style=" width:100%"/><br/><br/>
+					</form>
+				</div>
 			
-			<input type="text" class="form-control" name="username" placeholder="Username" aria-describedby="basic-addon1" required> <br/><br/>
-			<input type="password" class="form-control" name="pass" placeholder="Password" aria-describedby="basic-addon1" required><br/><br/> <br/>
-			<input class="btn btn-primary btn-lg" type="submit" name="btnsub" value="Login"  style=" width:100%"/><br/><br/>
-
-			</form>
 			</div>
-			
-		</div>
-         
-		
-    </div>
+		</div> <!-- end of row-->
+	</div> <!-- end of container-->
      
-    </div>
- <!--<body  style=" background:url(https://i.pinimg.com/originals/8d/2f/16/8d2f16132c197bf7298aee78483f8fcc.jpg)"></body>-->
-     <div class="container">
+    <div class="container">
       <hr>
    		<!-- footer -->
    		<footer class="footer">
-   			<p><a href="#">Password Recovery</a> &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+   			<p><a href="recovery.php">Password Recovery</a> &middot; <a href="privacy.php">Privacy</a> &middot; <a href="terms.php">Terms</a></p>
 			<p>Blackboard Project for NYIT CSCI 760 Database Course: Made by Faisal Nahian, Robert Maldonado and Siddharth Mogulla. Powered by <a href="http://getbootstrap.com">Bootstrap</a> and <a href="http://heyfaisal.com">heyfaisal.com</a>.</p>
 		</footer> <!-- end of footer -->
     </div> <!-- end of container -->

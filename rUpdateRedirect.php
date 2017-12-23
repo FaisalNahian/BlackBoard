@@ -1,23 +1,18 @@
 <?php  
 
 session_start();
-require_once("rconnect.php");
-
-//include 'connect.php';
+//include 'php/connect.php';
 include 'rNavBar.php';
 include 'rTempBody.php';
 
-$host = "localhost";
-$username ="root";
-$password = "root";
-$dbname = "blackboard_db";
-
 // Create connection
-$conn = new mysqli($host, $username, $password, $dbname);
+$con = mysqli_connect("localhost","heyfais1_bbdb2","Rangers17!","heyfais1_bbdb");
+
 // Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-} 
+if (mysqli_connect_errno())
+  {
+  echo "Failed to connect to MySQL DB: " . mysqli_connect_error();
+  }
 
 $cid = $_POST['class_id'];
 
@@ -37,11 +32,5 @@ $cid = $_POST['class_id'];
 <script type='text/javascript'>
 document.getElementById('myform').submit();
 </script>
- 
-
-
 ";
-
-
-
 ?>

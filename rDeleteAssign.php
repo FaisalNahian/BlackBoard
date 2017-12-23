@@ -1,18 +1,15 @@
 <?php
 
-$host = "localhost";
-$username ="root";
-$password = "root";
-$dbname = "blackboard_db";
-
-
-
+session_start();
+//require_once("php/connect.php"); 
 // Create connection
-$conn = new mysqli($host, $username, $password, $dbname);
+$con = mysqli_connect("localhost","heyfais1_bbdb2","Rangers17!","heyfais1_bbdb");
+
 // Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-} 
+if (mysqli_connect_errno())
+  {
+  echo "Failed to connect to MySQL DB: " . mysqli_connect_error();
+  }
 
  $id = $_POST['assign_id'];
  echo $id;

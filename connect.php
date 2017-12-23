@@ -1,11 +1,10 @@
 <?php
-// Enter your Host, username, password, database below.
-// I left password empty because i do not set password on localhost.
+// Create connection
+$con = mysqli_connect("localhost","heyfais1_bbdb2","Rangers17!","heyfais1_bbdb");
 
-$con = mysqli_connect("localhost","root","","blackboard_db");
 // Check connection
 if (mysqli_connect_errno())
   {
-  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  echo "Failed to connect to MySQL DB: " . mysqli_connect_error();
   }
 ?>

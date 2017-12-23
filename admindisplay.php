@@ -1,9 +1,3 @@
-<?php
-error_reporting(0);
-session_start();
-require_once("php/connect.php");
-$uid = $_SESSION['uid'];
-?>
 <html>
 
 <head>
@@ -29,50 +23,50 @@ $uid = $_SESSION['uid'];
 		<!-- Menu  Left -->
         <div>
             <ul class="nav navbar-nav">
-                <li class="#"  > <a href="home.php"> Home </a> </li>
+                <li class="#"  > <a href="home.php"> Home</a></li>
                <!--- <li  > <a href="create.php"> Upload Assignment </a> </li>
                 <li > <a href="delete.php"> Delete Assignment </a> </li>-->
-                <li > <a href="rViewClass.php"> View My Classes </a> </li>
-			<!--<li > <a href="adduser.php"> Add User</a> </li>
-				<li > <a href="adminreserve.php"> View Registered Classes</a> </li>
-				<li > <a href="adminborrow.php"> View Registered Students</a> </li>-->
-				
-				<li class="active"> <a href="admindisplay.php"> Display All Students</a> </li>
-				<li> <a href="adminassignments.php"> Display All Assignments</a> </li>
-				
-				</ul>
+                <li > <a href="rViewClass.php"> View My Classes</a></li>
+				<li class="active"> <a href="admindisplay.php"> Display All Students</a></li>
+				<li> <a href="rViewAssignments.php"> Display All Assignments</a></li>
+			</ul>
 
-
-            <!-- Menu  right -->
+			<!-- Menu on the right -->
             <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> <?php echo "admin"; ?><span class="caret"></span></a>
+               <li class="dropdown">			   
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> <?php echo $uid ; ?> <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="php/logout.php">Log-Out</a></li>
-
+                        <li><a href="update.php"><span class="glyphicon glyphicon-edit"></span> Edit Profile</a></li>
+                        <li><a href="index.php"><span class="glyphicon glyphicon-off"></span> Log Out</a></li>
                     </ul>
                 </li>
-
             </ul>
-
-
         </div>
-
 	</div>
 
 </nav>
 <?php
+
+// Create connection
+$con = mysqli_connect("localhost","heyfais1_bbdb2","Rangers17!","heyfais1_bbdb");
+
+// Check connection
+if (mysqli_connect_errno())
+  {
+  echo "Failed to connect to MySQL DB: " . mysqli_connect_error();
+  }
+
 $result = mysqli_query($con," select * from students ") or die("Error " . mysql_error());
 ?>
 <table class="table table-bordered">
 	<tr>
-		<th> SNO</th>
+		<th> Portal ID</th>
 		<th> First Name</th>
 		<th> Last Name</th>
 		<th> Student ID</th>	
 		<th> Course</th>
-		<th> Semester </th>
-		<th> Course Registered </th>
+		<th> Semester</th>
+		<th> Course Registered</th>
 		<th> Status</th>
 		
 		
@@ -108,8 +102,5 @@ mysqli_close($con);
 
 
 
-<body style="background:url(http://www.anishdua.com/wp-content/uploads/2016/07/Light-Grey-Background-Hd-5-1.jpg)"></body>
-
 </body>
-
 </html>

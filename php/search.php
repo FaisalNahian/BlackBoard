@@ -11,7 +11,7 @@
 	<!--	<script src="bootstrap/js/jquery-1.9.1.min.js"></script> -->
 
 		<script src="..\bootstrap/js/bootstrap-datepicker.js"></script>
-		<title> Results </title>
+		<title> Search Results </title>
 		
 
 

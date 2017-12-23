@@ -31,10 +31,10 @@ CREATE TABLE `classes` (
 --
 
 INSERT INTO `classes` (`class_id`, `class_title`, `class_desc`) VALUES
-(1, 'Science', 'Learn Computer Science and Theories'),
-(12, 'English', 'To Learn Basic English Terms And Words.'),
-(13, 'Math', 'To learn basic addition and subtraction problems.'),
-(14, 'Spanish', 'To Learn Basic Spanish Words and terms');
+(1, 'Science 101', 'Learn Computer Science and Theories'),
+(12, 'English 100', 'To Learn Basic English Terms And Words.'),
+(13, 'Math 102', 'To learn arithmetic and algebra.'),
+(14, 'Spanish 101', 'To Learn Basic Spanish Words and terms');
 
 --
 -- Indexes for dumped tables

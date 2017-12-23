@@ -15,7 +15,7 @@
 	<script src="bootstrap/js/jquery-1.12.2.js"></script>
 	<script src="bootstrap/js/bootstrap.min.js"></script>
 
-	<title> Search Book </title>
+	<title>Search</title>
 	
 </head>
 
@@ -27,52 +27,24 @@
 
 		<!-- Logo -->
 		<div class="navbar-header">
-			<a hre="#" class="navbar-brand" /> BLACKBOARD </a>
+			<a hre="#" class="navbar-brand" />BLACKBOARD </a>
 		</div>
 
 		<!-- Menu Left -->
         <div>
             <ul class="nav navbar-nav">
-                <li > <a href="home.php"> Home </a> </li>
-                <li  > <a href="create.php"> Upload Assignment </a> </li>
-
-                <li class="active"> <a href="delete.php"> Delete Assignment</a> </li>
-                <li > <a href="adminsearch.php"> View My Classes</a> </li>
-				<li > <a href="adduser.php"> Add User</a> </li>
-				<li > <a href="adminreserve.php"> View Registered Classes</a> </li>
-				<li > <a href="adminborrow.php"> View Registered Students</a> </li>
-				
-				<li > <a href="admindisplay.php"> Display All Students</a> </li>
-				<li > <a href="adminassignments.php"> Display All Assignment</a> </li>
-								<li class="dropdown">
-				
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"> More Options <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="freqborrower.php">Recently Registered Classes</a></li>
-						<li><a href="freqborrowedbook.php">Recently Updated Assignments</a></li>
-						<li><a href="freqborrowerb.php">Recently Graded Assignments</a></li>
-
-                   
-                </li>
-				
-				
-
+            	<li class="active"> <a href="home.php"> Home</a></li>
             </ul>
-
-
-            <!-- Menu on the right -->
+			<!-- Menu on the right -->
             <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> <?php echo $_SESSION['uid']; ?><span class="caret"></span></a>
+               <li class="dropdown">			   
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> <?php echo $uid ; ?> <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="php/logout.php">Log-Out</a></li>
-
+                        <li><a href="update.php"><span class="glyphicon glyphicon-edit"></span> Edit Profile</a></li>
+                        <li><a href="index.php"><span class="glyphicon glyphicon-off"></span> Log Out</a></li>
                     </ul>
                 </li>
-
             </ul>
-
-
         </div>
 
 	</div>
@@ -89,7 +61,7 @@
 
 		<div class="col-xs-5" style="background-color:white">
 		
-			<h1 align="center"> Search Book </h1> <br/><br/>
+			<h1 align="center">Search</h1> <br/><br/>
 
 			
 			
