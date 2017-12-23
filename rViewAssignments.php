@@ -1,24 +1,47 @@
 <?php
 session_start();
 //require_once("php/connect.php");
-// Create connection
-$con = mysqli_connect("localhost","heyfais1_bbdb2","Rangers17!","heyfais1_bbdb");
-
-// Check connection
-if (mysqli_connect_errno())
-  {
-  echo "Failed to connect to MySQL DB: " . mysqli_connect_error();
-  }
-
-include 'rNavBar.php';
+//include 'rNavBar.php';
 include 'rTempBody.php';
-
- $id = $_POST['class_id'];
- 
-
 ?>
+<head>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="bootstrap/css/bootstrap1.css" rel="stylesheet">
+    <link href="bootstrap/css/rStyle.css" rel="stylesheet">
+    <script src="bootstrap/js/jquery-1.12.2.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 
+    <title>BLACKBOARD - View Assignments</title>
+</head>
 
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <!-- Logo -->
+        <div class="navbar-header" >
+            <a hre="home.php" class="navbar-brand"/>BLACKBOARD </a>
+        </div>
+        <!-- Menu on Left -->
+        <div>
+            <ul class="nav navbar-nav">
+                <li> <a href="home.php"> Home</a></li>
+                <li><a href="rViewClass.php"> View My Classes</a></li>
+                <li><a href="admindisplay.php"> Display All Students</a></li>
+                <li class="active"><a href="rViewAssignments.php"> Display All Assignments</a></li>
+           </ul>
+            <!-- Menu on the right -->
+            <ul class="nav navbar-nav navbar-right">
+               <li class="dropdown">         
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> <?php echo $uid ; ?> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="update.php"><span class="glyphicon glyphicon-edit"></span> Edit Profile</a></li>
+                        <li><a href="index.php"><span class="glyphicon glyphicon-off"></span> Log Out</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div><!-- end of container -->
+</nav><!-- end of navigation -->
 
 <div id="tablediv">
 	<div id="tablecontainer" font-size:20px;>
@@ -31,9 +54,19 @@ include 'rTempBody.php';
 
 <!-- PHP CODE FOR VIEWING CLASS TABLE-->
 <?php
+// Create connection
+$con = mysqli_connect("localhost","heyfais1_bbdb2","Rangers17!","heyfais1_bbdb");
+
+// Check connection
+if (mysqli_connect_errno())
+  {
+  echo "Failed to connect to MySQL DB: " . mysqli_connect_error();
+  }
+
+$id = $_POST['class_id'];
 
 $sql = "SELECT * FROM assignments WHERE class_id = '$id'";
-$result = $conn->query($sql);
+$result = $con->query($sql);
 
 if ($result->num_rows > 0) {
     // output data of each row
@@ -64,7 +97,7 @@ if ($result->num_rows > 0) {
     echo "0 results";
 }
 
-$conn->close();
+$con->close();
 ?> 
 
 <!-- END PHP CODE-->

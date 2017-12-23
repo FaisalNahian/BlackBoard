@@ -1,20 +1,26 @@
 <?php
 session_start();
-require_once("php/connect.php");
-
-//include 'connect.php';
 include 'rNavBar.php';
 include 'rTempBody.php';
 ?>
 
- <?php
+<?php
+// Create connection
+$con = mysqli_connect("localhost","heyfais1_bbdb2","Rangers17!","heyfais1_bbdb");
+
+// Check connection
+if (mysqli_connect_errno())
+  {
+  echo "Failed to connect to MySQL DB: " . mysqli_connect_error();
+  }
+
 
   if(isset($_POST['submit']))
 {
     $sql = "INSERT INTO classes (class_title, class_desc)
     VALUES ('".$_POST["class_title"]."','".$_POST["class_desc"]."')";
 
-    $result = mysqli_query($conn,$sql);
+    $result = mysqli_query($con,$sql);
 }
 
 ?>
@@ -39,33 +45,3 @@ include 'rTempBody.php';
 
 	</div>
 </div>
-<!--
-<?php
-
-$host = "localhost";
-$username ="root";
-$password = "root";
-$dbname = "blackboard_db";
-
-// Create connection
-$conn = new mysqli($host, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-} 
-
-$sql = "SELECT * FROM classes";
-$result = $conn->query($sql);
-
-if ($result->num_rows > 0) {
-    // output data of each row
-    while($row = $result->fetch_assoc()) {
-        echo "<br> - Class: ". $row["class_title"]. " " . $row["class_desc"] . "<br>";
-    }
-} else {
-    echo "0 results";
-}
-
-$conn->close();
-?> 
--->

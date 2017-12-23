@@ -80,39 +80,6 @@
 </nav>
 
 <body>
-<!--<div class="container-fluid" style="background-color:WHITE" >
-
-    <div class="row" >
-
-        <div class="col-xs-2" >
-
-        </div>
-
-        <div class="col-xs-18" style="background-color:WHITE ">
-            
-            
-
-            <div class="jumbotron">
-                <h1 align ="center"> BLACKBOARD</h1>
-                <p></P>
-
-            <br/><br/>
-            <h3 align="center" class="text-success"><?php echo $update_msg ; ?></h3>
-
-            
-
-            </div>  
-
-        </div>
-
-        <div class="col-xs-2" >
-
-        </div>
-
-    </div>
-
-</div>-->
-
 
 <div class="container">
     <div class="row">
@@ -131,6 +98,12 @@
                                 <tr>
                                     <td>
                                         <li class="active"><a href="rViewClass.php" data-target-id="1"><i></i>Classes</a></li>
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <li class="active"><a href="rAddClass.php" data-target-id="1"><i></i>Add Class</a></li>
                                         
                                     </td>
                                 </tr>
@@ -196,15 +169,15 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <li class="active"><a href="#" data-target-id="5"><i></i>View Students enrolled for Spring 2017</a></li>
+                                        <li class="active"><a href="admindisplay.php" data-target-id="5"><i></i>View Students enrolled for Spring 2017</a></li>
                                     </td></tr>
                                     <tr>
                                     <td>
-                                        <li class="active"><a href="#" data-target-id="5"><i></i>View Students enrolled for Fall 2016</a></li>
+                                        <li class="active"><a href="admindisplay.php" data-target-id="5"><i></i>View Students enrolled for Fall 2016</a></li>
                                     </td></tr>
                                     <tr>
                                     <td>
-                                        <li class="active"><a href="#" data-target-id="5"><i></i>View Students enrolled for Spring 2017</a></li>
+                                        <li class="active"><a href="admindisplay.php" data-target-id="5"><i></i>View Students enrolled for Spring 2017</a></li>
                                     </td></tr>
                                     <tr>
                                     
@@ -212,8 +185,6 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
        </div>
         <div class="col-sm-9 col-md-9 well " id="1">

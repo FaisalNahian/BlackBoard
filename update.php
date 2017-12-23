@@ -1,5 +1,14 @@
 <?php
     session_start();
+	// Create connection
+	$con = mysqli_connect("localhost","heyfais1_bbdb2","Rangers17!","heyfais1_bbdb");
+
+	// Check connection
+	if (mysqli_connect_errno())
+	  {
+	  echo "Failed to connect to MySQL DB: " . mysqli_connect_error();
+	  }
+
 
     if(!isset($_POST['btn']))
             {
@@ -7,9 +16,7 @@
             }
 	$var = $_POST['btn'];
 	$_SESSION['btn']=$var;
-	$uid = $_SESSION['uid'];
-	
-	require_once("php/connect.php");		
+	$uid = $_SESSION['uid'];	
 	
 	$res = mysqli_query($con," select * from students where stud_id='$var' ") or die("Screwed"+mysqli_error($con));
 	$data = mysqli_fetch_row($res);

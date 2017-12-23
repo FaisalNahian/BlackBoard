@@ -20,7 +20,7 @@ if (mysqli_connect_errno())
      
    WHERE assign_id = '$id' " ;
  
- $result = mysqli_query($conn,$sql); 
+ $result = mysqli_query($con,$sql); 
  
 echo "
 

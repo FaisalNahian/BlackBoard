@@ -1,11 +1,48 @@
 <?php
 session_start();
 //require_once("connect.php");
-//include 'connect.php';
-include 'rNavBar.php';
+//include 'rNavBar.php';
 include 'rTempBody.php';
 ?>
+<head>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="bootstrap/css/bootstrap1.css" rel="stylesheet">
+    <link href="bootstrap/css/rStyle.css" rel="stylesheet">
+    <script src="bootstrap/js/jquery-1.12.2.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 
+    <title>BLACKBOARD - Classes</title>
+</head>
+
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <!-- Logo -->
+        <div class="navbar-header" >
+            <a hre="home.php" class="navbar-brand"/>BLACKBOARD </a>
+        </div>
+        <!-- Menu on Left -->
+        <div>
+            <ul class="nav navbar-nav">
+                <li> <a href="home.php"> Home</a></li>
+                <li class="active"><a href="rViewClass.php"> View My Classes</a></li>
+                <li><a href="admindisplay.php"> Display All Students</a></li>
+                <li><a href="rViewAssignments.php"> Display All Assignments</a></li>
+           </ul>
+            <!-- Menu on the right -->
+            <ul class="nav navbar-nav navbar-right">
+               <li class="dropdown">         
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> <?php echo $uid ; ?> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="update.php"><span class="glyphicon glyphicon-edit"></span> Edit Profile</a></li>
+                        <li><a href="index.php"><span class="glyphicon glyphicon-off"></span> Log Out</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div><!-- end of container -->
+</nav><!-- end of navigation -->
 
 <div id="tablediv">
   <div id="tablecontainer" font-size:20px;>
@@ -17,7 +54,7 @@ include 'rTempBody.php';
   
   <div style="width:350px; float:left;"><a> Description </a></div>
   
-  <div style="width:300px; float:left;"><a> Would you like to view or add an assignments </a></div></div>
+  <div style="width:300px; float:left;"><a> View or add an assignments</a></div></div>
 
 <!-- PHP CODE FOR VIEWING CLASS TABLE-->
 
@@ -71,10 +108,14 @@ if ($result->num_rows > 0) {
 } else {
     echo "0 results";
 }
-$conn->close();
+$con->close();
 ?> 
 
 <!-- END PHP CODE-->
 
   </div>
 </div>
+
+
+    </body>
+</html>
